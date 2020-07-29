@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-if (isset($POST['datos_cliente'])){
+ 
  $ci=$_SESSION['ci'];
  $nombre=$_SESSION['nombre'];
  $apellido=$_SESSION['apellido'];
@@ -37,9 +37,4 @@ if (isset($POST['datos_cliente'])){
  	
  <?php  include("controladoringresaDatosRegCli.php"); ?>
  
- <?php
-}else{
-            echo "no hay datos";
-}
-?>
-</div>
+ 
